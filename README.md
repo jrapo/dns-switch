@@ -72,9 +72,13 @@ python migrate.py
 ```
 
 ### 3. (Optional) Fix Google Root Domain
-If using Google Sites, run this to update root A records to the correct redirection IPs.
+Updates root A records to the correct redirection IPs. Supports custom IPs if needed.
 ```powershell
+# Use default Google IPs:
 python fix_google_root.py
+
+# OR provide custom IPs:
+python fix_google_root.py yourdomain.com 1.1.1.1 2.2.2.2
 ```
 
 ### 4. Finalize the Switch
